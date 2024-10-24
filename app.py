@@ -7,7 +7,9 @@ create_income_table()
 from finance_manager.authentication.register import register_user,login_user ,logout
 from finance_manager.reports import transaction
 from finance_manager.reports.final_report import generate_final_report
+
 app=Flask(__name__)
+
 app.secret_key="123"
 @app.route("/")
 def home():
@@ -228,4 +230,4 @@ def show_transaction():
 
 
 
-app.run(host='localhost',port=5500,debug=True)
+# app.run(host='localhost',port=5500,debug=True)

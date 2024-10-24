@@ -16,4 +16,6 @@ Thumbs.db
 # Ignore logs and temporary files
 *.log
 *.tmp
+finance_manager.zip
+main.py
 
