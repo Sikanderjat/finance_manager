@@ -3,7 +3,7 @@ import os
 import hashlib 
 conn = sqlite3.connect('finance_manager.db')
 c = conn.cursor()
-SESSION_FILE = 'session.json'
+#SESSION_FILE = 'session.json'
 def register_user(username,email, password,con_password):
     password_hash1 = hashlib.sha256(password.encode()).hexdigest()
     password_hash2 = hashlib.sha256(con_password.encode()).hexdigest()
@@ -44,8 +44,8 @@ def login_user(username, password):
         
         run=f"{access},\nWelcome {user},Your ID is {id}"
         
-        with open(SESSION_FILE, 'w') as f:
-            f.write(username)
+        #with open(SESSION_FILE, 'w') as f:
+        #    f.write(username)
         return run,True
     else:
         error="Invalid username or password."
