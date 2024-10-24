@@ -6,8 +6,7 @@ venv/
 __pycache__/
 *.pyc
 
-# Ignore SQLite database file
-finance_manager.db
+
 
 # Ignore system-specific files
 .DS_Store
